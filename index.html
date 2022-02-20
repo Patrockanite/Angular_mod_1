@@ -17,11 +17,12 @@
              placeholder="list comma separated dishes you usually have for lunch" class="form-control">
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button class="btn btn-default" ng-click="diet_check()">Check If Too Much</button>
+            
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
-           {{petits_plats}}
+           {{diet_message}}
          </div>
    </div>
    <script src="scr/angular.min.js"></script>
