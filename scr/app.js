@@ -19,7 +19,6 @@
            
         };
         $scope.countFood = function(){
-            var Tableau =[];
             if($scope.petits_plats.split(",")[0]===""){
                 return 0;
             }
