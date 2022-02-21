@@ -10,6 +10,9 @@
         $scope.diet_check = function(){
             var NbFood =  $scope.countFood();
             console.log(NbFood);
+            if(NbFood===0){
+                $scope.diet_message = "Please enter data first";
+            }
             if(NbFood>0 && NbFood<=3){
                 $scope.diet_message = "Enjoy!";
             }
