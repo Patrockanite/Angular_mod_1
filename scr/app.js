@@ -22,7 +22,8 @@
            
         };
         $scope.countFood = function(){
-            if($scope.petits_plats.split(",")[0]===""){
+            if($scope.petits_plats == ""){
+            //if($scope.petits_plats.split(",")[0]===""){
                 return 0;
             }
             else{                
