@@ -9,7 +9,7 @@
 
         $scope.diet_check = function(){
             var NbFood =  $scope.countFood();
-            //console.log(NbFood);
+
             if(NbFood===0){
                 $scope.diet_message = "Please enter data first";
             }
@@ -22,20 +22,22 @@
            
         };
         $scope.countFood = function(){
+            //if($scope.petits_plats.split(",")[0]===""){
             if($scope.petits_plats == ""){
                 return 0;
             }
-            else{ //For Bonus               
-                var tab = $scope.petits_plats.split(",");
+            else{ //For Bonus 
+                var tab =  $scope.petits_plats.split(",");
                 var NbVides = 0;
-                for(var i=0;i<tab.length;i++){
+                for(var i=0; i<tab.length; i++){
                     if(tab[i]==""){
-                        NbVides++;
-                    } 
-                }
+                         NbVides++;
+                       
+                     }
+                }           
                 return tab.length-NbVides;
-
             }
+            
         };
        
         
